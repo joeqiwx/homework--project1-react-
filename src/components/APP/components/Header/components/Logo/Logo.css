@@ -1,0 +1,11 @@
+header .site__title {
+  color: #49515d;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Montserrat", Helvetica, sans-serif;
+  line-height: 1;
+  margin: 38px 0 0;
+}
+header .site__title span {
+  color: #2eca7f;
+}
