@@ -1,0 +1,100 @@
+#Contact {
+  display: block;
+}
+#Contact .page__header {
+  padding: 30px 50px;
+  margin-bottom: 0;
+}
+#Contact .page__header h2 {
+  color: #fff;
+  font-size: 44px;
+  font-weight: 600;
+  line-height: 1.5em;
+  margin: 0;
+  text-align: center;
+}
+#Contact .page__content {
+  padding: 30px 50px 50px;
+}
+#Contact .page__content h3 {
+  font-size: 21px;
+  margin: 5px 0 25px;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+#Contact .page__content h3 span {
+  color: #2eca7f;
+}
+#Contact .page__content .contact__info {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  display: block;
+  margin: 0;
+  padding: 10px 10px 10px 0;
+}
+#Contact .page__content .contact__info h5 {
+  position: relative;
+  padding-left: 50px;
+  margin: 5px 0;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+#Contact .page__content .contact__icon {
+  position: absolute;
+  top: 50%;
+  margin-top: -12px;
+  width: 36px;
+  height: 36px;
+  background-color: #fafafa;
+  border-radius: 20px;
+  text-align: center;
+}
+#Contact .page__content .contact__icon img {
+  position: relative;
+  width: 18px;
+  height: 18px;
+  text-align: center;
+  line-height: 36px;
+}
+#Contact .page__content .contact__form .form__group .form__item {
+  padding-left: 40px;
+  position: relative;
+  margin: 0 0 25px;
+  border-bottom: 1px solid #e0e0e0;
+}
+#Contact .page__content .contact__form .form__group .form__item input {
+  padding: 10px 0 0 10px;
+  margin-bottom: 12px;
+  border: none;
+}
+#Contact .page__content .contact__form .form__group .form__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  text-align: center;
+  line-height: 42px;
+  color: #bdbdbd;
+  background-color: #fafafa;
+}
+#Contact .page__content .contact__form .form__group .form__item textarea {
+  padding: 10px 0 0 10px;
+  margin-bottom: 12px;
+  border: none;
+}
+#Contact .page__content .contact__form .form__group .form__btn {
+  background-color: #2eca7f;
+  color: #fff;
+  border: 0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.3);
+  text-transform: uppercase;
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 2.8;
+  padding: 0 1.5em;
+  outline: none;
+  border-radius: 3px;
+  margin-top: 20px;
+}
