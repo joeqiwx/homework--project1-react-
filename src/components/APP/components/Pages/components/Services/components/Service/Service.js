@@ -1,7 +1,7 @@
 
-const Service = ({serviceItem}) => (
+const Service = ({serviceItems}) => (
     <>
-    {serviceItem.map(({
+    {serviceItems.map(({
     icon,
     serviceName,
     description

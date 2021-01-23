@@ -3,8 +3,8 @@ import Page from '../../../Page/Page'
 import Education from './components/Education/Education'
 import Experience from './components/Experience/Experience'
 import Skills from './components/Skills/Skills'
-const Resume = () => (
-    <Page display={false}
+const Resume = ({display}) => (
+    <Page display={display}
           pageName={'Resume'}
     >
         <div className="row">

@@ -1,14 +1,15 @@
 import './Nav.css';
 import NavItem from './components/NavItem/NavItem'
 
-const Nav = () => {
+const Nav = ({currentPage, changePage}) => {
     const pages = ['Home', 'Resume', 'Services', 'Blog', 'Contact']
+    
     return(
     <nav>
         <ul>
             {
         pages.map((page, index) =>(
-            <NavItem key={index} href={'#' + page}>{page}</NavItem>
+            <NavItem changePage={changePage} active={currentPage===page} key={index} href={'#' + page}>{page}</NavItem>
         ))
             }
         </ul>

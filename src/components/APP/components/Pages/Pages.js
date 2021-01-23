@@ -6,13 +6,11 @@ import Services from './components/Services/Services'
 import Blog from './components/Blog/Blog'
 import Contact from './components/Contact/Contact'
 
-const Pages = () => (
+const Pages = ({currentPage}) => (
     <main>
-        <Home/>
-        <Resume/>
-        <Services/>
-        <Blog />
-        <Contact />
+        <Home display={currentPage==="Home"}/>
+        <Resume display={currentPage==="Resume"}/>
+        <Services display={currentPage==="Services"}/>
     </main>
 )
 

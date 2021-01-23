@@ -1,6 +1,6 @@
 import App from './src/components/APP/App';
 import './assets/css/style.css';
-ReactDOM.render(
-    <App />,
-    document.getElementById('root')
-)
+const render = () => (ReactDOM.render(
+    <App render={render} />,
+    document.getElementById('root')));
+render();
