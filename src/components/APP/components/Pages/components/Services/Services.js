@@ -1,90 +1,48 @@
-import webDesignIcon from './assets/img/web_design_icon.png'
-import clientIcon from '/assets/img/client_1.png'
-import './Services.css'
+import './Services.css';
+import Page from '../../../Page/Page'
+import webDesignIcon from './assets/img/web_design_icon.png';
+import photographyIcon from './assets/img/photography_icon.png';
+import managementIcon from './assets/img/management_icon.png';
+import advertisingIcon from './assets/img/advertising_icon.png'
+import clientIcon from '/assets/img/client_1.png';
+import Service from './components/Service/Service';
+import Client from './components/Client/Client';
 const Services = () => (
-    <section className="container" id="Services">
-    <div className="page__header row">
-        <h2>Services</h2>
-    </div>
-    <div className="page__content">
+    <Page display={true} pageName={'Services'}>
         <div className="row">
             <h3 className="col-sm-12 col-md-12">My <span>Services</span></h3>
-            <div className="service col-sm-6 col-md-3">
-                <div className="service__img">
-                    <img src={webDesignIcon} />
-                </div>
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div className="service col-sm-6 col-md-3">
-                <div className="service__img">
-                    <img src={webDesignIcon} />
-                </div>
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div className="service col-sm-6 col-md-3">
-                <div className="service__img">
-                    <img src={webDesignIcon} />
-                </div>
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </div>
-            <div className="service col-sm-6 col-md-3">
-                <div className="service__img">
-                    <img src={webDesignIcon} />
-                </div>
-                <h4>Web Design</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
-            </div>
+                <Service serviceItem={
+                    [{
+                        icon : webDesignIcon,
+                        serviceName: 'Web Design',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.'
+                    },{
+                        icon : photographyIcon,
+                        serviceName: 'Photography',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.'
+                    },{
+                        icon : managementIcon,
+                        serviceName: 'Management',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.'
+                    },{
+                        icon : advertisingIcon,
+                        serviceName: 'Avertising',
+                        description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.'
+                    }]
+                }/>
         </div>
         <div className="row">
             <h3 className="col-sm-12 col-md-12">Clients</h3>
-            <div className="client col-sm-4 col-md-2">
-                <div className="client__logo">
-                    <a href="#" target="_blank">
-                        <img src={clientIcon} />
-                    </a>
-                </div>
-            </div>
-            <div className="client col-sm-4 col-md-2">
-                <div className="client__logo">
-                    <a href="#" target="_blank">
-                        <img src={clientIcon} />
-                    </a>
-                </div>
-            </div>
-            <div className="client col-sm-4 col-md-2">
-                <div className="client__logo">
-                    <a href="#" target="_blank">
-                        <img src={clientIcon} />
-                    </a>
-                </div>
-            </div>
-            <div className="client col-sm-4 col-md-2">
-                <div className="client__logo">
-                    <a href="#" target="_blank">
-                        <img src={clientIcon} />
-                    </a>
-                </div>
-            </div>
-            <div className="client col-sm-4 col-md-2">
-                <div className="client__logo">
-                    <a href="#" target="_blank">
-                        <img src={clientIcon} />
-                    </a>
-                </div>
-            </div>
-            <div className="client col-sm-4 col-md-2">
-                <div className="client__logo">
-                    <a href="#" target="_blank">
-                        <img src={clientIcon} />
-                    </a>
-                </div>
-            </div>
+            <Client clientItems={[   
+                    {href:'#', clientIcon:clientIcon},
+                    {href:'#', clientIcon:clientIcon},
+                    {href:'#', clientIcon:clientIcon},
+                    {href:'#', clientIcon:clientIcon},
+                    {href:'#', clientIcon:clientIcon},
+                    {href:'#', clientIcon:clientIcon},
+                ]}/>
         </div>
-    </div>
-</section>
+    </Page>
 )
 
 export default Services;
