@@ -7,8 +7,8 @@ const Nav = () => {
     <nav>
         <ul>
             {
-        pages.map(page=>(
-            <NavItem href={'#' + page}>{page}</NavItem>
+        pages.map((page, index) =>(
+            <NavItem key={index} href={'#' + page}>{page}</NavItem>
         ))
             }
         </ul>
