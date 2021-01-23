@@ -11,6 +11,7 @@ const Pages = ({currentPage}) => (
         <Home display={currentPage==="Home"}/>
         <Resume display={currentPage==="Resume"}/>
         <Services display={currentPage==="Services"}/>
+        <Blog display={currentPage==="Blog"}/>
     </main>
 )
 
