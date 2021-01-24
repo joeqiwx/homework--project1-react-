@@ -3,7 +3,7 @@ import Pages from "./components/Pages/Pages"
 import Footer from "./components/Footer/Footer";
 import '../../../assets/css/style.css'
 const obj = {
-    currentPage : "Resume"
+    currentPage : "Home"
 }
 const App = ({render}) => {
 

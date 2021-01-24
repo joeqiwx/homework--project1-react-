@@ -12,6 +12,7 @@ const Pages = ({currentPage}) => (
         <Resume display={currentPage==="Resume"}/>
         <Services display={currentPage==="Services"}/>
         <Blog display={currentPage==="Blog"}/>
+        <Contact display={currentPage==="Contact"} />
     </main>
 )
 
