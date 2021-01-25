@@ -3,7 +3,6 @@ import locationIcon from '/assets/svg/location.svg';
 import phoneIcon from './assets/svg/phone.svg';
 import emailInfoIcon from './assets/svg/contactEmail.svg';
 import tickIcon from './assets/svg/tick.svg';
-import {GoogleMap} from "react-google-maps"
 import Page from '../../../Page/Page';
 import ContactInfo from './component/ContactInfo/ContactInfo';
 import ContacForm from './component/ContactForm/ContacForm';
