@@ -1,13 +1,13 @@
 import './NavItem.css'
 
-const NavItem = ({active, href, children, changePage}) => {
-const onClick = (event) => {
-        event.preventDefault();
-        changePage(children);}
+const NavItem = ({active, href, children, onClick}) => {
     return (
     <li><a className={active ? 'active' : ''} 
     href={href}
-    onClick={onClick}>{children}</a></li>
+    onClick={(event) => {
+        event.preventDefault();
+        onClick();
+    }}>{children}</a></li>
     )
 }
 

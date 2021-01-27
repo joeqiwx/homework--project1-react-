@@ -9,7 +9,7 @@ const Nav = ({currentPage, changePage}) => {
         <ul>
             {
         pages.map((page, index) =>(
-            <NavItem changePage={changePage} active={currentPage===page} key={index} href={'#' + page}>{page}</NavItem>
+            <NavItem onClick={() => changePage(page)} active={currentPage===page} key={index} href={'#' + page}>{page}</NavItem>
         ))
             }
         </ul>
