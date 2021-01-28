@@ -1,5 +1,5 @@
-const ContactInfo = ({infoIcon, description, key}) => (
-    <div className="contact__info" key={key}>
+const ContactInfo = ({infoIcon, description}) => (
+    <div className="contact__info">
         <div className="contact__icon">
             <img src={infoIcon} />
         </div>

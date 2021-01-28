@@ -1,13 +1,12 @@
 import './Blogcard.css'
 const Blogcard = ({
-    key,
     blogImg,
     day,
     month,
     category,
     title
 }) => (
-    <div className="blog col-sm-12 col-md-6 col-lg-6" key={key}>
+    <div className="blog col-sm-12 col-md-6 col-lg-6">
         <div className="blog__img">
             <img src={blogImg} />
             <div className="blog__date">
