@@ -1,3 +1,4 @@
+import {PAGE} from '../../../../../../store/constants'
 import Page from '../../../Page/Page'
 import './Home.css'
 import Photo from './components/Photo/Photo';
@@ -6,7 +7,7 @@ import AboutMe from './components/AboutMe/AboutMe';
 import Info from './components/Info/Info'
 const Home = ({display}) => (
     <Page display={display}
-          pageName={'Home'}
+          pageName={PAGE.HOME}
           header={(
             <>
             <Photo />

@@ -1,4 +1,5 @@
 import Page from '../../../Page/Page'
+import {PAGE} from '../../../../../../store/constants'
 import blogImg from './assets/img/blog_post_1.jpg';
 import Blogcard from './components/Blogcard/Blogcard';
 import './Blog.css';
@@ -41,7 +42,7 @@ const blogs = [{
 },];
 
 const Blog = ({display}) => (
-    <Page display={display} pageName={'Blog'}>
+    <Page display={display} pageName={PAGE.BLOG}>
         {blogs.map(({
             blogImg,
             day,

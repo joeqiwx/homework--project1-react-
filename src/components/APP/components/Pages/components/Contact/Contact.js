@@ -1,4 +1,5 @@
 import './Contact.css';
+import {PAGE} from '../../../../../../store/constants'
 import locationIcon from '/assets/svg/location.svg';
 import phoneIcon from './assets/svg/phone.svg';
 import emailInfoIcon from './assets/svg/contactEmail.svg';
@@ -21,7 +22,7 @@ const infoList = [{
 }];
 
 const Contact = ({display}) => (
-    <Page display={display} pageName={'Contact'}>
+    <Page display={display} pageName={PAGE.CONTACT}>
         <div className="row">
             <div className="col-sm-6 col-md-6 contact">
                 <h3>Get in <span>Touch</span></h3>

@@ -1,8 +1,9 @@
 import './Nav.css';
-import NavItem from './components/NavItem/NavItem'
+import NavItem from './components/NavItem/NavItem';
+import {PAGE} from '../../../../../../store/constants';
 
 const Nav = ({currentPage, changePage}) => {
-    const pages = ['Home', 'Resume', 'Services', 'Blog', 'Contact']
+    const pages = Object.values(PAGE);
     
     return(
     <nav>

@@ -1,3 +1,4 @@
+import {PAGE} from '../../../../../../store/constants'
 import './Resume.css'
 import Page from '../../../Page/Page'
 import Education from './components/Education/Education'
@@ -5,7 +6,7 @@ import Experience from './components/Experience/Experience'
 import Skills from './components/Skills/Skills'
 const Resume = ({display}) => (
     <Page display={display}
-          pageName={'Resume'}
+          pageName={PAGE.RESUME}
     >
         <div className="row">
             <Education />

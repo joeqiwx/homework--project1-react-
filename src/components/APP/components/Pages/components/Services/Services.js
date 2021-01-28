@@ -1,3 +1,4 @@
+import {PAGE} from '../../../../../../store/constants'
 import './Services.css';
 import Page from '../../../Page/Page'
 import webDesignIcon from './assets/img/web_design_icon.png';
@@ -8,7 +9,7 @@ import clientIcon from '/assets/img/client_1.png';
 import Service from './components/Service/Service';
 import Client from './components/Client/Client';
 const Services = ({display}) => (
-    <Page display={display} pageName={'Services'}>
+    <Page display={display} pageName={PAGE.SERVICES}>
         <div className="row">
             <h3 className="col-sm-12 col-md-12">My <span>Services</span></h3>
                 <Service serviceItems={
