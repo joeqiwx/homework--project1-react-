@@ -1,6 +1,6 @@
 import './Contact.css';
 import {PAGE} from '../../../../../../store/constants'
-import locationIcon from '/assets/svg/location.svg';
+import locationIcon from './assets/svg/location.svg';
 import phoneIcon from './assets/svg/phone.svg';
 import emailInfoIcon from './assets/svg/contactEmail.svg';
 import tickIcon from './assets/svg/tick.svg';
